@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Login - RYAL</title>
+</head>
+<body class="bg-gradient-to-r from-[#7226FF] to-[#F042FF] min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full">
+       
+        <h3 class="text-4xl text-center font-serif text-[#7226FF] mb-6">
+            RYAL
+        </h3>
+        
+        <form class="space-y-4">
+            <div>
+                <label class="block text-gray-700 text-sm font-medium mb-1" for="email">
+                    Email
+                </label>
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="email" type="email" placeholder="tu@gmail.com" required>
+            </div>
+            
+            <div>
+                <label class="block text-gray-700 text-sm font-medium mb-1" for="password">
+                    Contraseña
+                </label>
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="password" type="password" placeholder="********" required>
+            </div>
+            
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <input class="h-4 w-4 text-[#7226FF] focus:ring-[#7226FF] border-gray-300 rounded" id="remember-me" type="checkbox">
+                    <label class="ml-2 block text-sm text-gray-700" for="remember-me">
+                        Recordarme
+                    </label>
+                </div>
+                
+                <a class="text-sm text-[#7226FF] hover:underline" href="#">
+                    ¿Olvidaste tu contraseña?
+                </a>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-[#7226FF] to-[#F042FF] text-white py-2 px-4 rounded-md hover:opacity-90 hover:shadow-lg transition-opacity" type="submit">
+                Iniciar Sesión
+            </button>
+        </form>
+        
+        <div class="mt-6 text-center text-sm">
+            ¿No tienes una cuenta? 
+            <a class="text-[#7226FF] hover:underline" href="registarse.html">Regístrate</a>
+        </div>
+        <div class="mt-4 text-center">
+            <a class="inline-flex items-center text-[#7226FF] hover:underline" href="index.html">
+                <svg class="h-4 w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Volver al inicio
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
