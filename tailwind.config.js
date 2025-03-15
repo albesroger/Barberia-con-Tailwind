@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        fondo: "url('/IMGS/Salon2.jpg')",
+        fondo: "url('/IMGS/Salones/Salon1.jpeg')",
       },
     },
   },
