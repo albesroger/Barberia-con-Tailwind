@@ -10,31 +10,36 @@
 
     <div class="min-h-screen absolute inset-0 bg-black bg-opacity-40 "> </div>
 
-    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full z-10">
+    <div class="bg-white bg-opacity-30 p-8 rounded-xl shadow-lg max-w-md sm:w-full z-10">
        
         <h3 class="text-4xl text-center font-serif text-[#7226FF] mb-6">
             RYAL
         </h3>
         
-        <form class="space-y-4">
+        <form class="space-y-4" id="id_login">
             <div>
-                <label class="block text-gray-700 text-sm font-medium mb-1" for="email">
+                <label class="block text-gray-800 text-sm font-medium mb-1" for="email">
                     Email
                 </label>
+
                 <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="email" type="email" placeholder="tu@gmail.com" required>
             </div>
             
             <div>
-                <label class="block text-gray-700 text-sm font-medium mb-1" for="password">
+                <label class="block text-gray-800 text-sm font-medium mb-1" for="password">
                     Contraseña
                 </label>
-                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="password" type="password" placeholder="********" required>
+
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="password" type="password" placeholder="********" required minlength="8" maxlength="20" pattern="^(?=.*[A-Z]) (?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
             </div>
             
             <div class="flex items-center justify-between">
+
                 <div class="flex items-center">
+
                     <input class="h-4 w-4 text-[#7226FF] focus:ring-[#7226FF] border-gray-300 rounded" id="remember-me" type="checkbox">
-                    <label class="ml-2 block text-sm text-gray-700" for="remember-me">
+
+                    <label class="ml-2 block text-sm text-gray-800" for="remember-me">
                         Recordarme
                     </label>
                 </div>
@@ -62,6 +67,18 @@
             </a>
         </div>
     </div>
-    
 </body>
+<script>
+    document.getElementById("id_login").addEventListener("submit", function(event){
+        let correo = document.getElementById("email").value.trim();
+        let contrasenna = document.getElementById("password").value.trim();
+
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(correo)) {
+            alert("Ingrese un correo valido.")
+            event.preventDefault()
+            return;
+        }
+    })
+</script>
 </html>

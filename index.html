@@ -4,32 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="src/output.css" rel="stylesheet">
-        <title>Document</title>
+        <title>Salon RYAL</title>
     </head>
-    <body class="bg-white">
-
-        <header class="w-full">
-            <div class="h-14 flex justify-between items-center top-0  z-10 fixed w-full shadow-lg bg-white ">
+    <body class=" ">
+        <!-- +++++++++++++++++++Header++++++++++++++++++-->
+        <header class="w-full  bg-white">
+            
+            <div class="h-14 flex justify-between items-center top-0 z-10 w-full fixed bg-white">
                 
-                <h3 class="pl-4 sm:pl-10 text-2xl sm:text-4xl text-slate-600 font-serif">
+                <h3 class="pl-4 sm:pl-10 text-2xl sm:text-4xl text-slate-700 font-serif">
                     RYAL
                 </h3>
                
                 <nav class="hidden md:flex pl-4 lg:pl-16 p-5 space-x-4 lg:space-x-5 text-base lg:text-lg text-slate-700 font-sans">
-                    <a class="hover:text-sky-500 transition-colors" href="#">Inicio</a>
-                    <a class="hover:text-sky-500 transition-colors" href="./#id_Servicios">Servicios</a>
-                    <a class="hover:text-sky-500 transition-colors" href="./#id_Trabajos">Nuestros Trabajos</a>
-                    <a class="hover:text-sky-500 transition-colors" href="#Promociones">Promociones</a>
-                    <a class="hover:text-sky-500 transition-colors" href="#">Clasificar</a>
+                    <a class="hover:text-pink-700 transition-colors" href="#">Inicio</a>
+                    <a class="hover:text-pink-700 transition-colors" href="./#id_Servicios">Servicios</a>
+                    <a class="hover:text-pink-700 transition-colors" href="./#id_Trabajos">Nuestros Trabajos</a>
+                    <a class="hover:text-pink-700 transition-colors" href="./#id_Promociones">Promociones</a>
+                    <a class="hover:text-pink-700 transition-colors" href="./#id_Calificar">Calificar</a>
                 </nav>
         
-                <div class="hidden md:flex space-x-2 lg:space-x-3 pr-4 sm:pr-5 text-base lg:text-lg text-slate-500">
+                <div class="hidden md:flex space-x-2 lg:space-x-3 pr-4 sm:pr-5 text-base lg:text-lg text-slate-800">
                     <form action="login.html">
-                        <button class="hover:text-sky-500 hover:border-sky-500 transition-colors border-2 border-sky-500 rounded-lg px-2 font-sans" type="submit">Autenticarse</button>
+                        <button class="hover:text-pink-500  transition-colors bg-slate-200 rounded-3xl px-2 font-sans" type="submit">
+                            Autenticarse
+                        </button>
                     </form>
                     
                     <form action="registarse.html">
-                        <button class="hover:text-sky-500 hover:border-sky-500 transition-colors border-2 border-sky-500 rounded-lg px-2 font-sans" type="submit">Registrarse</button>
+                        <button class="hover:text-pink-500  transition-colors bg-slate-200 rounded-3xl px-2 font-sans" type="submit">
+                            Registrarse
+                        </button>
                     </form>
                 </div>
         
@@ -44,19 +49,24 @@
             <!-- Menú móvil desplegable -->
             <div class="hidden md:hidden fixed top-14 left-0 w-full bg-white shadow-lg z-10" id="mobile-menu">
                 <div class="flex flex-col p-4 space-y-3 text-slate-700">
-                    <a class="hover:text-sky-500 transition-colors py-2" href="#">Inicio</a>
-                    <a class="hover:text-sky-500 transition-colors py-2" href="#id_Servicios">Servicios</a>
-                    <a class="hover:text-sky-500 transition-colors py-2" href="#id_Trabajos">Nuestros Trabajos</a>
-                    <a class="hover:text-sky-500 transition-colors py-2" href="#">Promociones</a>
-                    <a class="hover:text-sky-500 transition-colors py-2" href="#">Clasificar</a>
+                    <a class="hover:text-pink-700 transition-colors py-2 px-5 hover:border-pink-400 border-2 border-spacing-2" href="#">
+                        Inicio</a>
+                    <a class="hover:text-pink-700 transition-colors py-2 px-5 hover:border-pink-400 border-2 border-spacing-2" href="./#id_Servicios">
+                        Servicios</a>
+                    <a class="hover:text-pink-700 transition-colors py-2 px-5 hover:border-pink-400 border-2 border-spacing-2" href="./#id_Trabajos">
+                        Nuestros Trabajos</a>
+                    <a class="hover:text-pink-700 transition-colors py-2 px-5 hover:border-pink-400 border-2 border-spacing-2" href="./#id_Promociones">
+                        Promociones</a>
+                    <a class="hover:text-pink-700 transition-colors py-2 px-5 hover:border-pink-400 border-2 border-spacing-2" href="./#id_Calificar">
+                        Calificar</a>
                     
-                    <div class="flex space-x-2 pt-2">
-                        <form class="w-1/2" action="login.html">
-                            <button class="w-full hover:text-sky-500 hover:border-sky-500 transition-colors border-2 border-sky-500 rounded-lg px-2 py-1 font-sans" type="submit">Autenticarse</button>
+                    <div class="flex justify-around space-x-2 pt-2">
+                        <form action="login.html">
+                            <button class="hover:text-pink-500 hover:border-slate-700 transition-colors border-2 border-pink-400 rounded-3xl px-5 font-sans" type="submit">Autenticarse</button>
                         </form>
                         
-                        <form class="w-1/2" action="registarse.html">
-                            <button class="w-full hover:text-sky-500 hover:border-sky-500 transition-colors border-2 border-sky-500 rounded-lg px-2 py-1 font-sans" type="submit">Registrarse</button>
+                        <form action="registarse.html">
+                            <button class="hover:text-pink-500 hover:border-slate-700 transition-colors  border-2 border-pink-400 rounded-3xl px-5 font-sans" type="submit">Registrarse</button>
                         </form>
                     </div>
                 </div>
@@ -65,108 +75,134 @@
       
         <main>  
             <!-- +++++++++++++++++++Inicio++++++++++++++++++-->
-            <div class="min-h-screen bg-white pb-3 shadow-xl"> <!--bg-fondo bg-cover-->
-                <div class="pt-32 md:pt-28 lg:pt-28 flex flex-col items-center space-y-8 md:space-y-12 lg:space-y-16 px-4 md:px-6">
-                  <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif bg-slate-100 w-full rounded-xl justify-center text-sky-500 flex shadow-xl p-4 md:p-6">
-                    Bienvenido a salon RYAL
-                  </h1>
+            <div class="min-h-screen pb-3 shadow-xl  bg-fondo bg-cover bg-right  "> <!--bg-fondo bg-cover--> 
 
-                  <div class="flex flex-col w-full items-center rounded-xl space-y-3 md:space-y-5 p-3 md:p-5 shadow-2xl bg-slate-200 backdrop-blur-md bg-slate-100/90">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-sans text-slate-600 font-extralight text-center">
-                      Donde la belleza se convierte en arte.
-                    </h2>
-                    <p class="text-xl sm:text-2xl md:text-3xl font-sans text-slate-700 font-extralight text-center">
-                      Relajate, renueva tu estilo y resalta tu esencia con nuestros tratamientos exclusivos
-                    </p>
+                <div class="pt-32 md:pt-28 lg:pt-28 flex flex-col items-center space-y-10 md:space-y-12 lg:space-y-12 px-4 md:px-6">
+                    
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl  md:justify-start lg:justify-start font-serif  w-full rounded-xl justify-center text-slate-700 flex  p-4 md:p-6">
+                        Bienvenido a salon RYAL
+                    </h1>
+
+                    <div class="flex-col w-full  rounded-xl "> <!--backdrop-blur-sm-->
+
+                        <h2 class="flex justify-center md:justify-start pl-4  text-2xl font-sans text-slate-600 font-extralight text-center">
+                            Donde la belleza se convierte en arte.
+                        </h2>
+                        
+                        <p class="whitespace-pre-line flex justify-center md:justify-start pl-4 text-xl font-sans text-slate-700 font-extralight text-center">
+                            Relajate, renueva tu estilo y resalta tu esencia con nuestros tratamientos exclusivos
+                        </p>
                   </div>
                   
-                  <div class="pt-6 ">
-                    <form action="">
-                      <button class="text-lg sm:text-xl md:text-2xl font-sans hover:text-sky-500 transition-colors border-2 border-sky-500 text-slate-700 rounded-lg px-2 py-1 md:px-3 md:py-2 shadow-xl" type="button">Reservar Cita</button>
-                    </form>
-                  </div>
+                   <div class="pt-6">
+                        <form action="Agendar_Cita.html">
+                            <button class="text-lg sm:text-xl md:text-2xl font-sans hover:scale-110 border-sky-500 rounded-3xl text-white bg-slate-500  px-2 py-1 md:px-3 md:py-2" type="submit">Reservar Cita</button>
+                        </form>
+                   </div>
                 </div>
-              </div>
+            </div>
             
-            <!-- +++++++++++++++++++Servicios+++++++++++++++++++++++-->
-            <div class="flex flex-col py-8 md:py-10 bg-white items-center space-y-3 md:space-y-5 shadow-xl px-4 md:px-6" id="id_Servicios"> 
+            <!-- +++++++++++++++++++Anuncio+++++++++++++++++++ -->
+            <div>
+                <div class="p-16">
+                    <h3 class="whitespace-pre-line font-serif text-4xl flex justify-center text-center text-slate-700"> 
+                        ¡Visita nuestro salón para experimentar el 
+                        sentido de la belleza y el estilo!
+                    </h3>
+                    <p class="whitespace-pre-line flex justify-center text-center font-sans text-slate-700 font-extralight">
+                        RYAL es un salón de lujo que se esfuerza por crear obras de arte aplicando las últimas tendencias en peinados,
+                        diseños y colaboración tanto para hombres como para mujeres a excelentes precios. 
+                        Estamos comprometidos a mejorar su belleza natural con  cada visita.
+                    </p>
+                </div>
+            </div>
 
-                <div class="mb-2 md:mb-4 ">
-                  <h2 class="text-3xl sm:text-4xl md:text-5xl mt-6 text-slate-700 font-serif">Servicios</h2>
+            <!-- +++++++++++++++++++Servicios+++++++++++++++++++++++-->
+            <div class="flex flex-col py-8 md:py-10 items-center space-y-3 md:space-y-5 px-4 md:px-6 bg-fondoSer w-full" id="id_Servicios"> 
+
+                <div class="mb-2 md:mb-4 pb-5">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl text-slate-700 font-serif">
+                        Servicios
+                    </h2>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto w-full max-w-6xl gap-3 md:gap-4">
 
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                        
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/pedicura.jpg" alt="Servicio de pedicura">
-                        
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Pedicura
-                        </h3>
-                    </div>
+                <div class="relative w-full max-w-6xl overflow-hidden pb-5">                
 
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/barberia.jpg" alt="Servicio de barbería">
-                        
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Barbería
-                        </h3>
-                    </div>
+                    <div class="flex h-96 gap-4 overflow-x-auto  snap-mandatory overflow-y-hidden w-full flex-nowrap">
 
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/peluqueria.jpg" alt="Servicio de peluquería">
-                        
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Peluqueria
-                        </h3>
-                    </div>    
+                        <div class="flex-shrink-0  w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 ">
 
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/manicura.jpg" alt="Servicio de manicura">
-                        
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Manicura
-                        </h3>
-                    </div>    
+                            <img class="h-48 sm:h-56 md:h-80  object-cover" src="./IMGS/Servicios/pedicura.jpg" alt="Servicio de pedicura">
 
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                   
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/skincare.jpg" alt="Servicio de manicura">
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                                Pedicura
+                            </h3>
+                        </div>
+            
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
                         
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Skincare
-                        </h3>
-                    </div>
-
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                   
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/maquillaje.jpg" alt="Servicio de manicura">
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/barberia.jpg" alt="Servicio de barbería">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Barbería
+                            </h3>
+                        </div>
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 ">
                         
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Maquillaje
-                        </h3>
-                    </div>
-
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                   
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/masajes.jpg" alt="Servicio de manicura">
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/peluqueria.jpg" alt="Servicio de peluquería">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Peluqueria
+                            </h3>
+                        </div>    
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
                         
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Masajes
-                        </h3>
-                    </div>
-                    
-                    <div class="items-center flex flex-col border border-black rounded-xl hover:border-sky-400 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                   
-                        <img class="h-48 sm:h-56 md:h-64 w-full object-cover rounded-t-xl" src="./IMGS/Servicios/depilaciones.jpg" alt="Servicio de manicura">
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/manicura.jpg" alt="Servicio de manicura">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Manicura
+                            </h3>
+                        </div>    
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
+                       
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/skincare.jpg" alt="Servicio de manicura">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Skincare
+                            </h3>
+                        </div>
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
+                       
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/maquillaje.jpg" alt="Servicio de manicura">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Maquillaje
+                            </h3>
+                        </div>
+    
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
+                       
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/masajes.jpg" alt="Servicio de manicura">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Masajes
+                            </h3>
+                        </div>
                         
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
-                        Depilación
-                        </h3>
+                        <div class="flex-shrink-0 w-64 items-center flex flex-col hover:shadow-lg hover:scale-105 transition-all duration-300 span-center">
+                       
+                            <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/depilaciones.jpg" alt="Servicio de manicura">
+                            
+                            <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
+                            Depilación
+                            </h3>
+                        </div>
                     </div>
 
                 </div>
@@ -174,133 +210,316 @@
             
             <!-- +++++++++++++++++++Nuestros trabajos+++++++++++++++-->
             <div class="pt-10 pb-5 flex flex-col items-center space-y-5 shadow-xl " id="id_Trabajos">
+                
+                <img src="./IMGS/Assets/tijera.png" alt="tijera">
+               
                 <h2 class="text-5xl text-slate-600 font-serif mt-8">Nuestros Trabajos</h2>
             
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6  max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6  max-w-6xl mx-auto">
 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+
                        <div class="relative">
-                           <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 1.jpeg" alt="Trabajo 1">
+                           <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 1.jpeg" alt="Trabajo 1">
                        </div>
                     </div>
             
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 2.jpeg" alt="Trabajo 2">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 2.jpeg" alt="Trabajo 2">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 1.jpeg" alt="Trabajo 3">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 1.jpeg" alt="Trabajo 3">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 2.jpeg" alt="Trabajo 4">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 2.jpeg" alt="Trabajo 4">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 1.jpeg" alt="Trabajo 5">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 1.jpeg" alt="Trabajo 5">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/peluqueria 2.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/peluqueria 2.jpeg" alt="Trabajo 6">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 1.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 1.jpeg" alt="Trabajo 6">
                     </div>
                 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 2.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 2.jpeg" alt="Trabajo 6">
                     </div>
                     
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/peluqueria 2.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/peluqueria 2.jpeg" alt="Trabajo 6">
                     </div>
                     
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 2.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/barberia 2.jpeg" alt="Trabajo 6">
                     </div>
 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 1.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/manicura 1.jpeg" alt="Trabajo 6">
                     </div>
 
-                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow hover:scale-105 border-2 border-white hover:border-sky-400 group">
-                        <img class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 2.jpeg" alt="Trabajo 6">
+                    <div class="overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 group">
+                        <img class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110" src="./IMGS/Galeria/pedicura 2.jpeg" alt="Trabajo 6">
                     </div>
 
                 </div>
             </div>
 
             <!-- +++++++++++++++++++Promociones+++++++++++++++-->
-            <div class="flex justify-center" id="Promociones">
-                <h2 class="text-5xl text-slate-600 font-serif mt-8">Promociones</h2>
+            <div class="flex flex-col bg-fondoSer p-3 pb-16" id="id_Promociones">
+                
+                <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-10">
+                    Promociones
+                </h2>
+                
+                <div class="flex justify-around">
+                    <div class="flex flex-col items-center w-72 bg-white hover:scale-105 transition-all">
+                        <div class=" h-52">
+                            <img class="h-full w-full object-cover object-center" src="./IMGS/Servicios/barberia.jpg" alt="Servicio de barberia de nuestro salon de belleza">
+                        </div>
+        
+                        <div class="p-5 space-y-3 ">
+                            <h3 class="text-sm font-semibold text-sky-500">
+                                    Barberia
+                            </h3>
+        
+                            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+                                Jueves de los niños
+                            </h2>
+        
+                            <p class="text-slate-500">
+                                Obtén hasta un 30% de descuento para niños menores de 14 años todos los jueves.
+                                </p>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col items-center w-72 bg-white hover:scale-105 transition-all">
+                        <div class=" h-52">
+                            <img class="h-full w-full object-cover object-center" src="./IMGS/Servicios/peluqueria.jpg" alt="Servicio de barberia de nuestro salon de belleza">
+                        </div>
+        
+                        <div class="p-5 space-y-3 ">
+                            <h3 class="text-sm font-semibold text-sky-500">
+                                    Peluqueria
+                            </h3>
+        
+                            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+                                Descuento para estudiantes
+                            </h2>
+        
+                            <p class="text-slate-500">
+                                Obtén un 20% de descuento en cualquier servicio para estudiante (no olvides tu carnet de estudiante).
+                                </p>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col items-center w-72 bg-white hover:scale-105 transition-all">
+                        <div class=" h-52">
+                            <img class="h-full w-full object-cover object-center" src="./IMGS/Servicios/manicura.jpg" alt="Servicio de barberia de nuestro salon de belleza">
+                        </div>
+        
+                        <div class="p-5 space-y-3 ">
+                            <h3 class="text-sm font-semibold text-sky-500">
+                                    Manicura
+                            </h3>
+        
+                            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+                                Personas mayores
+                            </h2>
+        
+                            <p class="text-slate-500">
+                                Las personas mayores disfrutan de un 25% de descuento en todos los servicios. Oferta válida de lunes a miércoles.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center w-72 bg-white hover:scale-105 transition-all">
+                        <div class=" h-52">
+                            <img class="h-full w-full object-cover object-center" src="./IMGS/Servicios/pedicura.jpg" alt="Servicio de barberia de nuestro salon de belleza">
+                        </div>
+        
+                        <div class="p-5 space-y-3 ">
+                            <h3 class="text-sm font-semibold text-sky-500">
+                                    Pedicura
+                            </h3>
+        
+                            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+                                Nuevos clientes
+                            </h2>
+        
+                            <p class="text-slate-500">
+                                Damos la bienvenida a nuevos clientes. Visítenos por primera vez y reciba un 25% de descuento en su primera cita.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- +++++++++++++++++++Calificar+++++++++++++++-->
+            <div class="bg-fondotest bg-cover w-full bg-fixed pt-5 pb-12" id="id_Calificar">
+                
+                <div class="flex flex-col items-center space-y-5 ">
+                    <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-12">
+                        Califícanos
+                    </h2>
+
+                    <div class="flex flex-col items-center h-full max-w-2xl">
+                        <div>
+                            <img class="h-32 w-32 rounded-full" src="./IMGS/Testimonios/test1.webp" alt>
+                        </div>
+                        <div>
+                            <h3 class="whitespace-pre-line font-serif text-4xl flex justify-center text-center text-slate-700">
+                                Jennifer
+                            </h3>
+                            <p class="whitespace-pre-line flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                Este es mi salón favorito, el mejor que he visitado.
+                                Además de un ambiente relajante y un personal muy amable, ofrecen excelentes servicios profesionales. 
+                                ¡Gracias por mi increíble corte! Mi cabello dañado ha cobrado vida y mi nuevo look es increíble. ¡Recomiendo ampliamente este salón!
+                            </p>
+                            <p class="whitespace-pre-line text-sm flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                15 de diciembre de 2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center h-full max-w-2xl">
+                        <div>
+                            <img class="h-32 w-32 rounded-full" src="./IMGS/Testimonios/test2.webp" alt>
+                        </div>
+                        <div>
+                            <h3 class="whitespace-pre-line font-serif text-4xl flex justify-center text-center text-slate-700">
+                                Rox's
+                            </h3>
+                            <p class="whitespace-pre-line flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime neque quidem reiciendis eos culpa nisi doloribus eveniet ipsa eaque
+                                eius laboriosam, reprehenderit commodi perspiciatis animi quod quos dolorum ducimus accusantium!
+                            </p>
+                            <p class="whitespace-pre-line text-sm flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                17 de diciembre de 2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center h-full max-w-2xl">
+                        <div>
+                            <img class="h-32 w-32 rounded-full" src="./IMGS/Testimonios/test3.webp" alt>
+                        </div>
+                        <div>
+                            <h3 class="whitespace-pre-line font-serif text-4xl flex justify-center text-center text-slate-700">
+                                Alex's
+                            </h3>
+                            <p class="whitespace-pre-line flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa et numquam ab. Nulla iure accusamus aspernatur numquam, 
+                                temporibus quam praesentium impedit quidem perferendis sequi cumque, ex, explicabo esse eum illo?
+                            </p>
+                            <p class="whitespace-pre-line text-sm flex justify-center text-center font-sans text-slate-700 font-extralight">
+                                10 de diciembre de 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- +++++++++++++++++++Seccion_last+++++++++++++++-->
+            <div class="flex justify-around h-48 w-full bg-gradient-to-r from-[#bc6aa2] to-[#f38597]">
+                <div class="pt-2">
+                    <h3 class="whitespace-pre-line font-serif text-4xl flex  text-center text-white">
+                        Hoja informativa
+                    </h3>
+
+                    <p class="whitespace-pre-line flex justify-center text-center text-xl font-sans text-white font-extralight">
+                        ¡Regístrate para recibir promociones y consejos para el cuidado del cabello!
+                    </p>
+                </div>
+
+                <div class="flex justify-start items-center">
+                    <form action="registarse.html">
+                        <button class="hover:text-pink-500 hover:border-slate-700 transition-colors bg-white rounded-3xl px-12 py-3 font-sans" type="submit">Registrarse</button>
+                    </form>
+                </div>
+            </div>
 
         </main>
 
         <!--++++++++++++++++FOOTER+++++++++++++++++++++-->
-        <footer class=" bg-gradient-to-r from-[#7226FF] to-[#F042FF] text-white"> <!--bg-[#290d51]-->
+        <footer class=" bg-white"> <!--bg-[#290d51]-->
           
           <!-- Sección principal del footer -->
           <div class="container mx-auto px-4 py-12 ">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                   
                 <!-- Columna 1: Logo e información -->
-                  <div class="space-y-4">
-                      <h3 class="text-3xl font-serif mb-4">RYAL</h3>
-                      <p class="text-white text-sm w-1/2">
+                    <div class="space-y-4">
+
+                      <h3 class="text-3xl font-serif mb-4 text-slate-700">RYAL</h3>
+
+                      <p class="text-slate-500 text-sm w-1/2">
                           Ofrecemos servicios profesionales de la más alta calidad, con un equipo dedicado a la excelencia y la satisfacción del cliente.
                       </p>
-                      <div class="pt-2">
-                          <p class="flex items-center gap-2 text-white text-sm">
-                              <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <div class="pt-2">
+                            <p class="flex items-center gap-2text-slate-500 text-sm">
+                                <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                              </svg>
+                                </svg>
                               Calle Principal Carretera San Antonio, UCI
-                          </p>
-                          <p class="flex items-center gap-2 text-white text-sm mt-2">
-                              <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                              </svg>
-                              +53 56677889
-                          </p>
-                          <p class="flex items-center gap-2 text-white text-sm mt-2">
-                              <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            </p>
+
+                            <p class="flex items-center gap-2 text-slate-500 text-sm mt-2">
+                                <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                +53 56677889
+                            </p>
+
+                            <p class="flex items-center gap-2 text-slate-500 text-sm mt-2">
+                                <svg class="h-5 w-5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                              </svg>
+                                </svg>
                               info_ryal@gmail.com
-                          </p>
-                      </div>
-                  </div>
+                            </p>
+                        </div>
+                    </div>
                   
                   <!-- Columna 2: Enlaces rápidos -->
                   <div>
-                      <h4 class="text-lg font-semibold mb-4 relative inline-block">
+                      <h4 class="text-lg font-semibold mb-4 relative inline-block text-slate-700">
                           Enlaces Rápidos
                           <span class="absolute bottom-0 left-0 w-1/2 h-0.5 bg-sky-500"></span>
                       </h4>
                       <ul class="space-y-2">
-                          <li><a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">Inicio</a></li>
-                          <li><a class="text-white hover:text-sky-500 transition-colors duration-300" href="#id_Servicios">Servicios</a></li>
-                          <li><a class="text-white hover:text-sky-500 transition-colors duration-300" href="#id_Trabajos">Nuestros Trabajos</a></li>
-                          <li><a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">Promociones</a></li>
-                          <li><a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">Clasificar</a></li>
+                          <li><a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#">Inicio</a></li>
+                          <li><a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#id_Servicios">Servicios</a></li>
+                          <li><a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#id_Trabajos">Nuestros Trabajos</a></li>
+                          <li><a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#id_Promociones">Promociones</a></li>
+                          <li><a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#id_Calificar">Clasificar</a></li>
                       </ul>
                   </div>
                   
                   <!-- Columna 3: Contactanos -->
                   <div class="w-1/2">
-                      <h4 class="text-lg font-semibold mb-4 relative inline-block">
+
+                      <h4 class="text-lg font-semibold mb-4 relative inline-block text-slate-700">
                           Suscríbete
                           <span class="absolute bottom-0 left-0 w-1/2 h-0.5 bg-sky-500"></span>
                       </h4>
-                      <p class="text-white text-sm mb-4">Recibe nuestras últimas noticias y ofertas especiales.</p>
+
+                      <p class="text-slate-500 text-sm mb-4">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                      
                       <form class="space-y-2">
+
                           <div class="relative">
-                              <input class="w-full px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-sky-500" type="email" placeholder="Tu correo electrónico" required>
+
+                              <input class="w-full px-4 py-2 rounded-md bg-white/10 border border-slate-600 text-slate-500  placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500" type="email" placeholder="Tu correo electrónico" required>
                           </div>
+
                           <button class="w-full bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300" type="submit">
                               Suscribirse
                           </button>
@@ -312,31 +531,31 @@
           <!-- Sección de redes sociales -->
           <div class="border-t border-white/30 py-6">
               <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-                  <div class="text-white text-sm mb-4 md:mb-0">
+                  <div class="text-slate-500 text-sm mb-4 md:mb-0">
                       © 2024 RYAL. Todos los derechos reservados.
                   </div>
                   
                   <div class="flex space-x-4">
                       <!-- Facebook -->
-                      <a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">
+                      <a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#">
                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
                           </svg>
                       </a>
                       <!-- Twitter/X -->
-                      <a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">
+                      <a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#">
                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
                           </svg>
                       </a>
                       <!-- Instagram -->
-                      <a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">
+                      <a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#">
                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
                           </svg>
                       </a>
                       <!-- LinkedIn -->
-                      <a class="text-white hover:text-sky-500 transition-colors duration-300" href="#">
+                      <a class="text-slate-500 hover:text-sky-500 transition-colors duration-300" href="#">
                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
                           </svg>
@@ -357,5 +576,6 @@
                 mobileMenu.classList.toggle('hidden');
             });
         });
+        
     </script>
 </html>
