@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/output.css" rel="stylesheet">
+    <script src="src/JS/autenticarse.js" defer></script>
+    <script src="src/JS/proteger.js" defer></script>
     <title>Login - RYAL</title>
 </head>
+
 <body class=" bg-fondo bg-cover min-h-screen flex items-center justify-center"> <!-- bg-gradient-to-r from-[#7226FF] to-[#F042FF]-->
 
     <div class="min-h-screen absolute inset-0 bg-black bg-opacity-40 "> </div>
@@ -19,10 +22,10 @@
         <form class="space-y-4" id="id_login">
             <div>
                 <label class="block text-gray-800 text-sm font-medium mb-1" for="email">
-                    Email
+                    Usuario
                 </label>
 
-                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="email" type="email" placeholder="tu@gmail.com" required>
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="username" type="text" placeholder="Usuario" required>
             </div>
             
             <div>
@@ -30,7 +33,7 @@
                     Contraseña
                 </label>
 
-                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="password" type="password" placeholder="********" required minlength="8" maxlength="20" pattern="^(?=.*[A-Z]) (?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7226FF] hover:shadow-lg" id="password" type="password" placeholder="********" required>
             </div>
             
             <div class="flex items-center justify-between">
