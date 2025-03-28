@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,17 +68,4 @@
         </div>
     </div>
 </body>
-<script>
-    document.getElementById("id_login").addEventListener("submit", function(event){
-        let correo = document.getElementById("email").value.trim();
-        let contrasenna = document.getElementById("password").value.trim();
-
-        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(correo)) {
-            alert("Ingrese un correo valido.")
-            event.preventDefault()
-            return;
-        }
-    })
-</script>
 </html>
