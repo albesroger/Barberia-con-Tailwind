@@ -1,6 +1,6 @@
 // Esto se ejecutará cuando el formulario se envíe
 document.getElementById("id_login").addEventListener("submit", function (e) {
-  e.preventDefault();     //Previene que el formulario se envíe y recargue la página
+  e.preventDefault(); //Previene que el formulario se envíe y recargue la página
 
   // Obtener valores del formulario
   const username = document.getElementById("username").value;
@@ -18,7 +18,7 @@ document.getElementById("id_login").addEventListener("submit", function (e) {
   );
 
   // Si el usuario fue encontrado
-  if (usuarioEncontrado) {
+  if (usuarioEncontrado ) {
     // Guardar el usuario en localStorage
     localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado));
 
