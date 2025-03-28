@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/output.css" rel="stylesheet">
     <title>Salon RYAL</title>
+    <script src="src/JS/index.js" defer>
+    </script>
   </head>
   <body class=" ">
-    <!-- +++++++++++++++++++Header++++++++++++++++++-->
+    
+    <!-- +++++++++++++++++++ HEADER ++++++++++++++++++-->
     <header class="w-full bg-white">
       
         <div class="h-14 flex justify-between items-center top-0 z-10 w-full fixed bg-white dark:bg-slate-700">
@@ -70,7 +73,7 @@
     </header>
 
     <main>
-      <!-- +++++++++++++++++++Inicio++++++++++++++++++-->
+      <!-- +++++++++++++++++++ INICIO ++++++++++++++++++-->
       <div class="min-h-screen pb-3 shadow-xl bg-fondo bg-cover bg-right">
         <!--bg-fondo bg-cover-->
 
@@ -102,7 +105,8 @@
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Anuncio+++++++++++++++++++ -->
+
+      <!-- +++++++++++++++++++ ANUNCIO +++++++++++++++++++ -->
       <div>
         <div class="p-16">
           <h3 class="whitespace-pre-line font-serif text-4xl flex justify-center text-center text-slate-700">
@@ -118,84 +122,198 @@
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Servicios+++++++++++++++++++++++-->
+      
+      <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++++++++++-->
       <div class="flex flex-col py-8 md:py-10 items-center space-y-3 md:space-y-5 px-4 md:px-6 bg-fondoSer w-full" id="id_Servicios">
+       
         <div class="mb-2 md:mb-4 pb-5">
+
           <h2 class="text-3xl sm:text-4xl md:text-5xl text-slate-700 font-serif">
             Servicios
           </h2>
         </div>
 
+        <!-- -------------------------------------------------------------------------- -->
+
         <div class="relative w-full max-w-6xl overflow-hidden pb-5">
+
           <div class="flex h-96 gap-4 overflow-x-auto snap-mandatory overflow-y-hidden w-full flex-nowrap">
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300">
+
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
+
               <img class="h-48 sm:h-56 md:h-80 object-cover" src="./IMGS/Servicios/pedicura.jpg" alt="Servicio de pedicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Servicio especializado de cuidado de pies. Incluye limpieza, exfoliación y esmaltado profesional para unos pies suaves y hermosos.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $200
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Pedicura
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/barberia.jpg" alt="Servicio de barbería">
+              
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Cortes de pelo modernos y clásicos para caballeros. Nuestros estilistas expertos ofrecen cortes personalizados, recorte de barba y servicios de afeitado profesional.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $250
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Barbería
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/peluqueria.jpg" alt="Servicio de peluquería">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Transformaciones de cabello con las últimas tendencias. Ofrecemos cortes, tintes, mechas, peinados y tratamientos capilares para todo tipo de cabello.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $250
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Peluqueria
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/manicura.jpg" alt="Servicio de manicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Cuidado profesional de manos y uñas. Incluye limpieza, forma, cutícula, esmaltado tradicional o semipermanente con las últimas tendencias en diseño.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $150
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Manicura
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/skincare.jpg" alt="Servicio de manicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Cuidado profesional de manos y uñas. Incluye limpieza, forma, cutícula, esmaltado tradicional o semipermanente con las últimas tendencias en diseño.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $300
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Skincare
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/maquillaje.jpg" alt="Servicio de manicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Cuidado profesional de manos y uñas. Incluye limpieza, forma, cutícula, esmaltado tradicional o semipermanente con las últimas tendencias en diseño.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $220
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Maquillaje
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/masajes.jpg" alt="Servicio de manicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Experiencia de relajación total. Ofrecemos masajes terapéuticos, relajantes, descontracturantes y de spa para aliviar el estrés y renovar tu bienestar.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $350
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Masajes
               </h3>
             </div>
 
-            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 span-center">
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/depilaciones.jpg" alt="Servicio de manicura">
+
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+                
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
+                  Depilación profesional con técnicas suaves y efectivas. Utilizamos métodos de cera, depilación láser y otras técnicas para una piel suave y libre de vello.
+                </p>
+
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
+                  Precio: $230
+                </p>
+              </div>
 
               <h3 class="font-serif text-xl md:text-2xl text-slate-700 py-2 md:py-3">
                 Depilación
               </h3>
             </div>
+            
           </div>
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Nuestros trabajos+++++++++++++++-->
+
+      <!-- +++++++++++++++++++ NUESTROS TRABAJOS +++++++++++++++-->
       <div class="pt-10 pb-5 flex flex-col items-center space-y-5 shadow-xl" id="id_Trabajos">
         <img src="./IMGS/Assets/tijera.png" alt="tijera">
 
@@ -256,7 +374,8 @@
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Promociones+++++++++++++++-->
+
+      <!-- +++++++++++++++++++ PROMOCIONES +++++++++++++++-->
       <div class="flex flex-col bg-fondoSer p-3 pb-16" id="id_Promociones">
         <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-10">
           Promociones
@@ -341,7 +460,8 @@
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Calificar+++++++++++++++-->
+
+      <!-- +++++++++++++++++++ CALIFICAR +++++++++++++++-->
       <div class="bg-fondotest bg-cover w-full bg-fixed pt-5 pb-12" id="id_Calificar">
         <div class="flex flex-col items-center space-y-5">
           <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-12">
@@ -411,7 +531,8 @@
         </div>
       </div>
 
-      <!-- +++++++++++++++++++Seccion_last+++++++++++++++-->
+
+      <!-- +++++++++++++++++++ ULTIMA SECCION +++++++++++++++-->
       <div class="flex justify-around h-48 w-full bg-gradient-to-r from-[#bc6aa2] to-[#f38597]">
         <div class="pt-2">
           <h3 class="whitespace-pre-line font-serif text-4xl flex text-center text-white">
@@ -433,6 +554,7 @@
         </div>
       </div>
     </main>
+
 
     <!--++++++++++++++++FOOTER+++++++++++++++++++++-->
     <footer class="bg-white">
@@ -562,15 +684,5 @@
     </footer>
   </body>
 
-  <script>
-    // JavaScript para controlar el menú móvil
-    document.addEventListener("DOMContentLoaded", function () {
-      const mobileMenuButton = document.getElementById("boton_menu_mobil");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      mobileMenuButton.addEventListener("click", function () {
-        mobileMenu.classList.toggle("hidden");
-      });
-    });
-  </script>
+  
 </html>
