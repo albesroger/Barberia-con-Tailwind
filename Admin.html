@@ -4,26 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Admin</title>
+    <link href="src/output.css" rel="stylesheet">
     <!-- <script src="src/JS/proteger.js" defer></script>-->
     <script src="src/JS/logout.js" defer></script>
+    <script src="src/JS/addServi.js" defer></script>
+    <script src="src/JS/addPromo.js" defer></script>
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
-  <body class="flex flex-col justify-center items-center h-screen bg-gray-100">
-    <h2 class="text-3xl font-bold mb-4">Bienvenido Administrador</h2>
-   
-    
-    
-   
-   
-   
-   
-   
-   
-   
-   
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" id="logout">
-      Cerrar Sesión
-    </button>
+  <body>
+    <main class="flex flex-col p-4 space-y-5 justify-center items-center">
+      <h3 class="text-5xl mb-4 font-sans font-bold text-slate-800">
+        Administración
+      </h3>
+
+      <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++-->
+      <div class="container mx-auto p-4 bg-gray-300 rounded-xl flex flex-col">
+        <h3 class="text-3xl font-bold text-center font-sans text-slate-700">
+          Administrar Servicios
+        </h3>
+
+        <div class="flex items-start justify-around pt-5">
+          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white">
+            <input class="border p-1 pl-3 w-full rounded-full" id="service-name" type="text" placeholder="Nombre del servicio">
+            <input class="border p-1 pl-3 w-full rounded-full" id="service-desc" type="text" placeholder="Descripción">
+            <input class="border p-1 pl-3 w-full rounded-full" id="service-price" type="number" placeholder="Precio">
+            <input class="border p-1 pl-3 w-full rounded-full" id="service-img" type="text" placeholder="URL de la imagen">
+
+            <div class="flex justify-center">
+              <button class="bg-blue-500 rounded-full text-white px-4 py-2 hover:scale-105" onclick="addService()">
+                Agregar Servicio
+              </button>
+            </div>
+          </div>
+
+          <div class="w-96 border-2 p-2 pt-0 rounded-lg border-white">
+            <h2 class="text-xl font-semibold mt-2">Lista de Servicios</h2>
+            <ul class="mt-2 space-y-1 border-white" id="services-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- +++++++++++++++++++ PROMOCIONES +++++++++++++++-->
+      <div class="container mx-auto p-4 bg-gray-300 rounded-xl flex flex-col">
+        <h3 class="text-3xl font-bold text-center font-sans text-slate-700">
+          Administrar Promociones
+        </h3>
+
+        <div class="flex items-start justify-around pt-5">
+          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white">
+            <input class="border p-2 w-full" id="promo-service" type="text" placeholder="Servicio">
+            <input class="border p-2 w-full" id="promo-title" type="text" placeholder="Título de la promoción">
+            <input class="border p-2 w-full" id="promo-desc" type="text" placeholder="Descripción">
+            <input class="border p-2 w-full" id="promo-img" type="text" placeholder="URL de la imagen">
+
+            <div class="flex justify-center">
+              <button class="bg-blue-500 rounded-full text-white px-4 py-2 hover:scale-105" onclick="addPromotion()">
+                Agregar Promoción
+              </button>
+            </div>
+          </div>
+
+          <div class="w-96 border-2 p-2 pt-0 rounded-lg border-white">
+            <h2 class="text-xl font-semibold mt-6">Lista de Promociones</h2>
+            <ul class="mt-4 space-y-1" id="promo-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" id="logout">
+        Cerrar Sesión
+      </button>
+    </main>
   </body>
 </html>

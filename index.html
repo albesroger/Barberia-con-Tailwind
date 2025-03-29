@@ -13,7 +13,7 @@
     <!-- +++++++++++++++++++ HEADER ++++++++++++++++++-->
     <header class="w-full bg-white">
       
-        <div class="h-14 flex justify-between items-center top-0 z-10 w-full fixed bg-white dark:bg-slate-700">
+        <div class="h-14 flex justify-between items-center top-0 z-10 w-full fixed bg-white dark:bg-slate-500">
         
         <!-- Boton tres rayas-->
         <button class="md:hidden flex items-start pl-4 " id="boton_menu_mobil">
@@ -124,12 +124,12 @@
 
       
       <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++++++++++-->
-      <div class="flex flex-col py-8 md:py-10 items-center space-y-3 md:space-y-5 px-4 md:px-6 bg-fondoSer w-full" id="id_Servicios">
+      <div class="flex flex-col py-8 md:py-10 items-center space-y-3 md:space-y-5 px-4 md:px-6 bg-fondoSer w-full" id="id_servicios">
        
         <div class="mb-2 md:mb-4 pb-5">
 
           <h2 class="text-3xl sm:text-4xl md:text-5xl text-slate-700 font-serif">
-            Servicios
+            Servicios-
           </h2>
         </div>
 
@@ -190,7 +190,7 @@
               <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
                 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
-                  Transformaciones de cabello con las últimas tendencias. Ofrecemos cortes, tintes, mechas, peinados y tratamientos capilares para todo tipo de cabello.
+                  Cortes de pelo modernos y clásicos para caballeros. Nuestros estilistas expertos ofrecen cortes personalizados, recorte de barba y servicios de afeitado profesional.
                 </p>
 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
@@ -232,7 +232,7 @@
               <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
                 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
-                  Cuidado profesional de manos y uñas. Incluye limpieza, forma, cutícula, esmaltado tradicional o semipermanente con las últimas tendencias en diseño.
+                  Tratamientos personalizados para el cuidado de la piel. Limpieza profunda, hidratación, control de acné, tratamientos anti-edad y rejuvenecimiento facial.  
                 </p>
 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
@@ -253,7 +253,7 @@
               <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
                 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
-                  Cuidado profesional de manos y uñas. Incluye limpieza, forma, cutícula, esmaltado tradicional o semipermanente con las últimas tendencias en diseño.
+                  Maquillaje profesional para cualquier ocasión. Desde looks naturales hasta maquillaje de gala, nuestros expertos resaltan tu belleza única con técnicas de última generación.
                 </p>
 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 bg-white bg-opacity-30">
@@ -289,10 +289,13 @@
 
             <!-- -------------------------------------------------------------------------- -->
 
+
+
+            <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++++++++++-->            
             <div class="flex-shrink-0 w-64 items-center flex flex-col hover:scale-105 transition-all duration-300 relative group">
               <img class="h-48 sm:h-56 md:h-80 w-full object-cover" src="./IMGS/Servicios/depilaciones.jpg" alt="Servicio de manicura">
 
-              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex flex-col space-y-4 items-center justify-center">
                 
                 <p class="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 font-sans font-semibold">
                   Depilación profesional con técnicas suaves y efectivas. Utilizamos métodos de cera, depilación láser y otras técnicas para una piel suave y libre de vello.
@@ -311,6 +314,16 @@
           </div>
         </div>
       </div>
+
+      <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++++++++++-->
+      <div class="flex flex-col py-8 md:py-10 items-center space-y-3 md:space-y-5 px-4 md:px-6 bg-fondoSer w-full" id="id_Servicios">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl text-slate-700 font-serif">Servicios</h2>
+      
+        <div class="relative w-full max-w-6xl overflow-hidden pb-5">
+          <div class="flex h-96 gap-4 overflow-x-auto snap-mandatory overflow-y-hidden w-full flex-nowrap" id="services-container"></div>
+        </div>
+      </div>
+      
 
 
       <!-- +++++++++++++++++++ NUESTROS TRABAJOS +++++++++++++++-->
@@ -376,7 +389,7 @@
 
 
       <!-- +++++++++++++++++++ PROMOCIONES +++++++++++++++-->
-      <div class="flex flex-col bg-fondoSer p-3 pb-16" id="id_Promociones">
+      <div class="flex flex-col bg-fondoSer p-3 pb-16" id="id_promociones">
         <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-10">
           Promociones
         </h2>
@@ -460,6 +473,15 @@
         </div>
       </div>
 
+      
+      <!-- +++++++++++++++++++ PROMOCIONES +++++++++++++++-->
+      <div class="flex flex-col bg-fondoSer p-3 pb-16" id="id_Promociones">
+        <h2 class="flex text-5xl text-slate-600 font-serif mt-8 justify-center pb-10">Promociones</h2>
+      
+        <div class="flex justify-around flex-wrap gap-4" id="promo-container"></div>
+      </div>
+      
+      
 
       <!-- +++++++++++++++++++ CALIFICAR +++++++++++++++-->
       <div class="bg-fondotest bg-cover w-full bg-fixed pt-5 pb-12" id="id_Calificar">
