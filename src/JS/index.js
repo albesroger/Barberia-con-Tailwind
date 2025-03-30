@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const services = JSON.parse(localStorage.getItem("services")) || [];
 function renderServices() {
-  console.log("Cargando servicios:", services); // Depuración
+
   const container = document.getElementById("services-container");
 
   if (!container) {
