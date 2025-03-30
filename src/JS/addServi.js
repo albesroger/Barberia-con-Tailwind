@@ -11,6 +11,11 @@ function addService() {
     localStorage.setItem("services", JSON.stringify(services));
     renderAdminServices();
     renderServices(); // Para actualizar la página de usuario
+
+    document.getElementById("promo-service").value = "";
+    document.getElementById("promo-title").value = "";
+    document.getElementById("promo-desc").value = "";
+    document.getElementById("promo-img").value = "";
   }
 }
 

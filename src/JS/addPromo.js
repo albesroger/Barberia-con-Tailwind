@@ -35,7 +35,7 @@ function renderAdminPromotions() {
   list.innerHTML = promotions
     .map(
       (p, i) => `
-        <li class="flex justify-between items-center p-0 pl-3 bg-transparent border-2 hover:bg-white border-white rounded-lg">
+        <li class="flex justify-between items-center p-0 pl-3 bg-transparent border-2 hover:bg-white border-white rounded-lg ">
           ${p.service} - ${p.title} 
           <button onclick="removePromotion(${i})" class="bg-blue-500 hover:bg-blue-700 text-white rounded-md px-2 py-1">Eliminar</button>
         </li>
