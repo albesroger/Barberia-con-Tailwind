@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Admin</title>
     <link href="src/output.css" rel="stylesheet">
-    <!-- <script src="src/JS/proteger.js" defer></script>-->
+    <script src="src/JS/proteger.js" defer></script>
     <script src="src/JS/logout.js" defer></script>
     <script src="src/JS/addServi.js" defer></script>
     <script src="src/JS/addPromo.js" defer></script>
@@ -18,15 +18,21 @@
       <h3 class="text-5xl mb-4 font-sans font-bold text-slate-800">
         Administración
       </h3>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded absolute top-0 right-10" id="logout">
+        Cerrar Sesión
+      </button>
 
       <!-- +++++++++++++++++++ SERVICIOS +++++++++++++++-->
-      <div class="container mx-auto p-4 bg-gray-300 rounded-xl flex flex-col">
+      <div class="container mx-auto p-4 bg-gray-300 rounded-xl flex flex-col space-y-9">
         <h3 class="text-3xl font-bold text-center font-sans text-slate-700">
           Administrar Servicios
         </h3>
 
         <div class="flex items-start justify-around pt-5">
-          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white">
+
+          <button class=" bg-blue-500 rounded-full text-white px-4 py-2 hover:scale-105 absolute top-40" id="toggleButton"> Agregar</button>
+
+          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white hidden" id="formu-servi">
             <input class="border p-1 pl-3 w-full rounded-full" id="service-name" type="text" placeholder="Nombre del servicio">
             <input class="border p-1 pl-3 w-full rounded-full" id="service-desc" type="text" placeholder="Descripción">
             <input class="border p-1 pl-3 w-full rounded-full" id="service-price" type="number" placeholder="Precio">
@@ -47,17 +53,20 @@
       </div>
 
       <!-- +++++++++++++++++++ PROMOCIONES +++++++++++++++-->
-      <div class="container mx-auto p-4 bg-gray-300 rounded-xl flex flex-col">
+      <div class="container mx-auto p-2 bg-gray-300 rounded-xl flex flex-col space-y-9">
         <h3 class="text-3xl font-bold text-center font-sans text-slate-700">
           Administrar Promociones
         </h3>
 
         <div class="flex items-start justify-around pt-5">
-          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white">
-            <input class="border p-2 w-full" id="promo-service" type="text" placeholder="Servicio">
-            <input class="border p-2 w-full" id="promo-title" type="text" placeholder="Título de la promoción">
-            <input class="border p-2 w-full" id="promo-desc" type="text" placeholder="Descripción">
-            <input class="border p-2 w-full" id="promo-img" type="text" placeholder="URL de la imagen">
+
+          <button class=" bg-blue-500 rounded-full text-white px-4 py-2 hover:scale-105" id="toggleButton2"> Agregar</button>
+
+          <div class="space-y-4 w-1/2 border-2 p-2 rounded-lg border-white hidden" id="formu-promo">
+            <input class="border p-1 pl-3 w-full rounded-full" id="promo-service" type="text" placeholder="Servicio">
+            <input class="border p-1 pl-3 w-full rounded-full" id="promo-title" type="text" placeholder="Título de la promoción">
+            <input class="border p-1 pl-3 w-full rounded-full" id="promo-desc" type="text" placeholder="Descripción">
+            <input class="border p-1 pl-3 w-full rounded-full" id="promo-img" type="text" placeholder="URL de la imagen">
 
             <div class="flex justify-center">
               <button class="bg-blue-500 rounded-full text-white px-4 py-2 hover:scale-105" onclick="addPromotion()">
@@ -72,10 +81,24 @@
           </div>
         </div>
       </div>
-
-      <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" id="logout">
-        Cerrar Sesión
-      </button>
     </main>
+
+    <script>
+      const formulario = document.getElementById("formu-servi");
+      const toggleButton = document.getElementById("toggleButton");
+
+      toggleButton.addEventListener("click", () => {
+          formulario.classList.toggle("hidden");
+          toggleButton.textContent = formulario.classList.contains("hidden") ? "Agregar" : "Ocultar";
+      });
+
+      const formulario2 = document.getElementById("formu-promo");
+      const toggleButton2 = document.getElementById("toggleButton2");
+
+      toggleButton2.addEventListener("click", () => {
+          formulario2.classList.toggle("hidden");
+          toggleButton2.textContent = formulario.classList.contains("hidden") ? "Agregar" : "Ocultar";
+      });
+  </script>
   </body>
 </html>

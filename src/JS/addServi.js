@@ -1,32 +1,31 @@
-const services = JSON.parse(localStorage.getItem('services')) || [];
+const services = JSON.parse(localStorage.getItem("services")) || [];
 
 function addService() {
-  const name = document.getElementById('service-name').value;
-  const desc = document.getElementById('service-desc').value;
-  const price = document.getElementById('service-price').value;
-  const img = document.getElementById('service-img').value;
+  const name = document.getElementById("service-name").value;
+  const desc = document.getElementById("service-desc").value;
+  const price = document.getElementById("service-price").value;
+  const img = document.getElementById("service-img").value;
 
   if (name && desc && price && img) {
     services.push({ name, desc, price, img });
-    localStorage.setItem('services', JSON.stringify(services));
+    localStorage.setItem("services", JSON.stringify(services));
     renderAdminServices();
 
-    document.getElementById('service-name').value = '';
-    document.getElementById('service-desc').value = '';
-    document.getElementById('service-price').value = '';
-    document.getElementById('service-img').value = '';
+    document.getElementById("service-name").value = "";
+    document.getElementById("service-desc").value = "";
+    document.getElementById("service-price").value = "";
+    //document.getElementById('service-img').value = '';
   }
 }
 
 function removeService(index) {
   services.splice(index, 1);
-  localStorage.setItem('services', JSON.stringify(services));
+  localStorage.setItem("services", JSON.stringify(services));
   renderAdminServices();
-  renderServices();
 }
 
 function renderAdminServices() {
-  const list = document.getElementById('services-list');
+  const list = document.getElementById("services-list");
   list.innerHTML = services
     .map(
       (s, i) => `
@@ -36,7 +35,7 @@ function renderAdminServices() {
       </li>
     `
     )
-    .join('');
+    .join("");
 }
 
 renderAdminServices();
