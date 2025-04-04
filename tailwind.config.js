@@ -7,6 +7,7 @@ export default {
         fondo: "url('/IMGS/tipa.jpeg')",
         fondoSer: "url('/IMGS/mozaico.png')",
         fondotest: "url('/IMGS/Testimonios/backtest.jpeg')",
+        fondoAdmi: "url('/IMGS/Salones/Salon5.jpg')",
       },
     },
   },
